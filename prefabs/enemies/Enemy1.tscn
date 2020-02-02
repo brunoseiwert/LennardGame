@@ -1,0 +1,74 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scripts/enemies/monster.gd" type="Script" id=1]
+[ext_resource path="res://prefabs/enemies/corpses/Enemy1Corpse.tscn" type="PackedScene" id=2]
+[ext_resource path="res://prefabs/Schoppe.tscn" type="PackedScene" id=3]
+[ext_resource path="res://fx/hitEffectMaterial.tres" type="Material" id=4]
+[ext_resource path="res://art/new/enemies/1/enemy1.png" type="Texture" id=5]
+[ext_resource path="res://art/new/enemies/1/enemy2.png" type="Texture" id=6]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+render_priority = 0
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 2, 3 )
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "walk",
+"speed": 7.0
+} ]
+
+[node name="Enemy1" type="KinematicBody2D" groups=[
+"enemy",
+]]
+
+pause_mode = 1
+input_pickable = false
+collision_layer = 9
+collision_mask = 2
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Material", "Pause", "Transform", "collision" ]
+ACTOR_VARIABLES = "========"
+maxHealth = 2.0
+ENEMY_VARIABLES = "========"
+GRAVITY = 15
+movSpeed = 60
+jumpForce = 100
+damage = 1
+corpse = ExtResource( 2 )
+schoppe = ExtResource( 3 )
+hitEffectMaterial = ExtResource( 4 )
+normalMaterial = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
+
+position = Vector2( 0, 5 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="1"]
+
+use_parent_material = true
+frames = SubResource( 3 )
+animation = "walk"
+playing = true
+_sections_unfolded = [ "Material", "Transform" ]
+
+[node name="HitEffectTimer" type="Timer" parent="." index="2"]
+
+process_mode = 1
+wait_time = 0.1
+one_shot = true
+autostart = false
+
+[connection signal="timeout" from="HitEffectTimer" to="." method="setNormalMat"]
+
+

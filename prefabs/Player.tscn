@@ -1,0 +1,142 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://scripts/player/player.gd" type="Script" id=1]
+[ext_resource path="res://prefabs/bullets/rifleAmmo.tscn" type="PackedScene" id=2]
+[ext_resource path="res://prefabs/bullets/shotgunAmmo.tscn" type="PackedScene" id=3]
+[ext_resource path="res://prefabs/bullets/muzzleFlashs/RedMuzzleFlash.tscn" type="PackedScene" id=4]
+[ext_resource path="res://prefabs/bullets/muzzleFlashs/OrangeMuzzleFlash.tscn" type="PackedScene" id=5]
+[ext_resource path="res://art/new/rifles/rifle.png" type="Texture" id=6]
+[ext_resource path="res://art/new/rifles/shotgun.png" type="Texture" id=7]
+[ext_resource path="res://art/new/player/player4.png" type="Texture" id=8]
+[ext_resource path="res://art/new/player/player5.png" type="Texture" id=9]
+[ext_resource path="res://art/new/player/player3.png" type="Texture" id=10]
+[ext_resource path="res://art/new/player/player1.png" type="Texture" id=11]
+[ext_resource path="res://art/new/player/player2.png" type="Texture" id=12]
+[ext_resource path="res://prefabs/Camera2D.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Sound/shotgunShoot.wav" type="AudioStream" id=14]
+[ext_resource path="res://Sound/rfleShoot.wav" type="AudioStream" id=15]
+[ext_resource path="res://Sound/weaponswap.wav" type="AudioStream" id=16]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 3, 6 )
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "idle",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "walk",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "fall",
+"speed": 5.0
+} ]
+
+[sub_resource type="AudioStreamRandomPitch" id=3]
+
+audio_stream = ExtResource( 14 )
+random_pitch = 1.1
+
+[sub_resource type="AudioStreamRandomPitch" id=4]
+
+audio_stream = ExtResource( 15 )
+random_pitch = 1.1
+
+[sub_resource type="AudioStreamRandomPitch" id=5]
+
+audio_stream = ExtResource( 16 )
+random_pitch = 1.1
+
+[node name="Player" type="KinematicBody2D" groups=[
+"player",
+]]
+
+input_pickable = false
+collision_layer = 5
+collision_mask = 2
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Material", "Transform", "collision" ]
+rifleAmmo = ExtResource( 2 )
+shotgunAmmo = ExtResource( 3 )
+rifleFlash = ExtResource( 4 )
+shotgunFlash = ExtResource( 5 )
+rifleSprite = ExtResource( 6 )
+shotgunSprite = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
+
+position = Vector2( 0, 2 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="1"]
+
+use_parent_material = true
+frames = SubResource( 2 )
+animation = "walk"
+_sections_unfolded = [ "Transform" ]
+
+[node name="Camera2D" parent="." index="2" instance=ExtResource( 13 )]
+
+offset = Vector2( 0, -20 )
+shakeMag = 0.8
+
+[node name="Arm" type="Position2D" parent="." index="3"]
+
+position = Vector2( 0, 4 )
+
+[node name="Weapon" type="Sprite" parent="Arm" index="0"]
+
+position = Vector2( 1, 0 )
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="ShootPos" type="Position2D" parent="Arm/Weapon" index="0"]
+
+position = Vector2( 7, 0 )
+
+[node name="Sounds" type="Node" parent="." index="4"]
+
+[node name="Shotgun" type="AudioStreamPlayer" parent="Sounds" index="0"]
+
+stream = SubResource( 3 )
+volume_db = -45.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Rifle" type="AudioStreamPlayer" parent="Sounds" index="1"]
+
+stream = SubResource( 4 )
+volume_db = -50.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Swap" type="AudioStreamPlayer" parent="Sounds" index="2"]
+
+stream = SubResource( 5 )
+volume_db = -50.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+

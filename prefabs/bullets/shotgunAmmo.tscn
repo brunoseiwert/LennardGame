@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/player/bullets/bullet.gd" type="Script" id=1]
+[ext_resource path="res://prefabs/bullets/BulletExplosion.tscn" type="PackedScene" id=2]
+[ext_resource path="res://prefabs/bullets/trails/orangeTrail.tscn" type="PackedScene" id=3]
+[ext_resource path="res://art/new/rifles/bullets/bullet2.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 3, 2 )
+
+[node name="ShotgunBullet" type="KinematicBody2D" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 10
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Transform" ]
+explosion = ExtResource( 2 )
+particles = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="." index="1"]
+
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+

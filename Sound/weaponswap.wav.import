@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/weaponswap.wav-bb13262eb1b6483c83f5172ef94a1d3d.sample"
+
+[deps]
+
+source_file="res://Sound/weaponswap.wav"
+dest_files=[ "res://.import/weaponswap.wav-bb13262eb1b6483c83f5172ef94a1d3d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0
