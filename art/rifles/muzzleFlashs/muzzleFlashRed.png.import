@@ -7,10 +7,7 @@ path="res://.import/muzzleFlashRed.png-5567f7dd9c19cf0c67868480c14055fa.stex"
 [deps]
 
 source_file="res://art/rifles/muzzleFlashs/muzzleFlashRed.png"
-source_md5="b9bc240c09d639a83a9e656c4c165da9"
-
 dest_files=[ "res://.import/muzzleFlashRed.png-5567f7dd9c19cf0c67868480c14055fa.stex" ]
-dest_md5="e5a3cc6bbfc5de06198328ef04219f3c"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/muzzleFlashOrange.png-7f75dbc6ae2dae3679f2b546eac8d7d6.stex"
 [deps]
 
 source_file="res://art/rifles/muzzleFlashs/muzzleFlashOrange.png"
-source_md5="7fc125400bf7e5a5ecd9f0672dd952c3"
-
 dest_files=[ "res://.import/muzzleFlashOrange.png-7f75dbc6ae2dae3679f2b546eac8d7d6.stex" ]
-dest_md5="e3421ea1fd41a22b85e329b7d777cef4"
 
 [params]
 

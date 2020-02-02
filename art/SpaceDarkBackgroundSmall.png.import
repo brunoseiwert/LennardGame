@@ -7,10 +7,7 @@ path="res://.import/SpaceDarkBackgroundSmall.png-09974c15af498b110cd496d43fe91fd
 [deps]
 
 source_file="res://art/SpaceDarkBackgroundSmall.png"
-source_md5="3fef2f71b6ea2df44bc527bc842db618"
-
 dest_files=[ "res://.import/SpaceDarkBackgroundSmall.png-09974c15af498b110cd496d43fe91fd6.stex" ]
-dest_md5="0f58724fefe25bcba75aa917a0d48be4"
 
 [params]
 

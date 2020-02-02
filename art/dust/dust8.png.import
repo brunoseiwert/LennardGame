@@ -7,10 +7,7 @@ path="res://.import/dust8.png-cf915ad8096d344a2a96c434fe125614.stex"
 [deps]
 
 source_file="res://art/dust/dust8.png"
-source_md5="8c9f83faf2aafa4e083bde6863686de0"
-
 dest_files=[ "res://.import/dust8.png-cf915ad8096d344a2a96c434fe125614.stex" ]
-dest_md5="31dac4d90135ecd5d70d0f9712c3668b"
 
 [params]
 

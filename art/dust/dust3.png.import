@@ -7,10 +7,7 @@ path="res://.import/dust3.png-4aaf62e0746be0ccf9bfe3d859a6313c.stex"
 [deps]
 
 source_file="res://art/dust/dust3.png"
-source_md5="d8e170eb6a76a3ecd38ce0f9c4743b19"
-
 dest_files=[ "res://.import/dust3.png-4aaf62e0746be0ccf9bfe3d859a6313c.stex" ]
-dest_md5="7f60e742cec666d07e6337468d8b69b6"
 
 [params]
 

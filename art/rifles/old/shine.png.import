@@ -7,10 +7,7 @@ path="res://.import/shine.png-d74c96e43df72adafe8784a9cdee0353.stex"
 [deps]
 
 source_file="res://art/rifles/old/shine.png"
-source_md5="e69f83c4ca5d5b15ce4cb3e98b1afe42"
-
 dest_files=[ "res://.import/shine.png-d74c96e43df72adafe8784a9cdee0353.stex" ]
-dest_md5="aa36e83ed52e1fb71fe15a223f7df4d1"
 
 [params]
 

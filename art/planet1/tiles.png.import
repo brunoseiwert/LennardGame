@@ -7,10 +7,7 @@ path="res://.import/tiles.png-a7baa7623f44aa9b11397e14dd5c030f.stex"
 [deps]
 
 source_file="res://art/planet1/tiles.png"
-source_md5="c76ea7eb7cad555dc6e7a6dd6092dd4b"
-
 dest_files=[ "res://.import/tiles.png-a7baa7623f44aa9b11397e14dd5c030f.stex" ]
-dest_md5="40c3d39476d68649e3fd659d1cd49e06"
 
 [params]
 

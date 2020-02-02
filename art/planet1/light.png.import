@@ -7,10 +7,7 @@ path="res://.import/light.png-bf941979840247ba3ea6803b0c2f8463.stex"
 [deps]
 
 source_file="res://art/planet1/light.png"
-source_md5="27dc85f110d7e833b23652b01a6a7963"
-
 dest_files=[ "res://.import/light.png-bf941979840247ba3ea6803b0c2f8463.stex" ]
-dest_md5="14fbbec688543b3c00bf00aa56255f4f"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/schoppe.png-e3cbea19c48038eb69bac63b033f0203.stex"
 [deps]
 
 source_file="res://art/schoppe.png"
-source_md5="cba39685cac46e68eff1e5e63c653eeb"
-
 dest_files=[ "res://.import/schoppe.png-e3cbea19c48038eb69bac63b033f0203.stex" ]
-dest_md5="1e527d977c9b353d3f8b823140fecc05"
 
 [params]
 

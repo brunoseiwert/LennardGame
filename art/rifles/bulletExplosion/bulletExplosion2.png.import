@@ -7,10 +7,7 @@ path="res://.import/bulletExplosion2.png-86534ca739fcb0a7955cd2d81e5c470c.stex"
 [deps]
 
 source_file="res://art/rifles/bulletExplosion/bulletExplosion2.png"
-source_md5="aab9107cd42a641ecbccf9897ab049b7"
-
 dest_files=[ "res://.import/bulletExplosion2.png-86534ca739fcb0a7955cd2d81e5c470c.stex" ]
-dest_md5="2b111f607513f487c7e0260bf2510991"
 
 [params]
 

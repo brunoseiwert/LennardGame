@@ -7,10 +7,7 @@ path="res://.import/cursor32.png-11998b4f0115fabefdbb8efae8341876.stex"
 [deps]
 
 source_file="res://art/ui/cursor32.png"
-source_md5="c36956570c522ff1fc484a614e012005"
-
 dest_files=[ "res://.import/cursor32.png-11998b4f0115fabefdbb8efae8341876.stex" ]
-dest_md5="5a5a1268021b27e31e8b05ecd5c671d5"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/healthBarUnder.png-61cba1ff894f981a5048eb640bf81a56.stex"
 [deps]
 
 source_file="res://art/ui/healthBarUnder.png"
-source_md5="868da77c7c8fe098d926212804c27e7e"
-
 dest_files=[ "res://.import/healthBarUnder.png-61cba1ff894f981a5048eb640bf81a56.stex" ]
-dest_md5="8fd824f0aacd96b1a0a5bcc4cd1e681e"
 
 [params]
 

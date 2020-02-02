@@ -7,10 +7,7 @@ path="res://.import/spawner.png-a89608f05f50cfd0893f462ea5565bd2.stex"
 [deps]
 
 source_file="res://art/spawner.png"
-source_md5="f2d389707e5f0342cf75fe5e791be4a1"
-
 dest_files=[ "res://.import/spawner.png-a89608f05f50cfd0893f462ea5565bd2.stex" ]
-dest_md5="5855fc33c0565faced515152970944d3"
 
 [params]
 

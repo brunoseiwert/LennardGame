@@ -7,10 +7,7 @@ path="res://.import/deco.png-6937c0b7f5fff41194b8b480c263eb84.stex"
 [deps]
 
 source_file="res://art/planet1/deco.png"
-source_md5="a6440343457a91fa33707d55d8c53f6e"
-
 dest_files=[ "res://.import/deco.png-6937c0b7f5fff41194b8b480c263eb84.stex" ]
-dest_md5="0ad759625d1b1b5dd72c6c086fd2a80b"
 
 [params]
 

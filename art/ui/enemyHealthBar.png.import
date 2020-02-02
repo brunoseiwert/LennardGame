@@ -7,10 +7,7 @@ path="res://.import/enemyHealthBar.png-e0c955c9a3de0b5683d242f897443bd8.stex"
 [deps]
 
 source_file="res://art/ui/enemyHealthBar.png"
-source_md5="23960c522778a2df75b5dfd95b2a5398"
-
 dest_files=[ "res://.import/enemyHealthBar.png-e0c955c9a3de0b5683d242f897443bd8.stex" ]
-dest_md5="5dc85a63b83298a45e196c8ba6991741"
 
 [params]
 
